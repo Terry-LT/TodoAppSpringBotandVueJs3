@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    password: 54pochka22
+    url: jdbc:postgresql://localhost:5432/registration
+    username: tima
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 2525
+    username: 2e018cac706e25
+    password: 92b4a135a38eb1
+
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "*"
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
